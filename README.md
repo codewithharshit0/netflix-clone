@@ -1,0 +1,1 @@
+Hey! A nice Netflix clone built by my hands - raw on mobile. You can use this code to make yours too. It may have some error, if you find one you can email me on codewithharshit0@gmail.com and I'll try to fix it as soon as possible! Thank you
