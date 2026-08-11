@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  font-family: "Martel Sans", sans-serif;
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+.main {
+  background-image: url("assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* Dark Gradient Overlay */
+.main .box {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* NAVBAR */
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+nav img {
+  width: 110px;
+  height: auto;
+}
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+.btn-lang {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* HERO SECTION */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 950px;
+  margin: auto;
+  gap: 16px;
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.hero h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.hero p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+/* HERO FORM */
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+}
+.hero-form input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.btn-get-started {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 18px;
+}
+/* SEPARATION STRIP */
+.separation {
+  height: 8px;
+  background-color: #232323;
+}
+/* FEATURE SECTIONS */
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 24px;
+  text-align: center;
+  gap: 20px;
+}
+.first-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.first-text p {
+  font-size: 1.1rem;
+}
+.secImg {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secImg img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+/* Section 1 TV Video Position */
+.first:not(.third) .secImg video {
+  position: absolute;
+  top: 20.5%;
+  left: 13%;
+  width: 73%;
+  height: 54%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* Section 3 Device-Pile Video Fix */
+.third .secImg video {
+  position: absolute;
+  top: 9%;
+  left: 18%;
+  width: 63%;
+  height: 47%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* FAQ SECTION */
+.faq {
+  padding: 50px 24px;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.faq-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-box {
+  background-color: #2d2d2d;
+  color: white;
+  text-align: left;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+
+.faq-box:hover {
+  background-color: #414141;
+}
+
+/* Question Header Bar */
+.faq-question {
+  padding: 20px 24px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; /* Removes default browser disclosure triangle */
+}
+
+.faq-question::-webkit-details-marker {
+  display: none; /* Webkit chrome fix for removing default arrow */
+}
+
+.faq-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate '+' into '×' when opened */
+.faq-box[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Answer Container */
+.faq-answer {
+  padding: 24px;
+  border-top: 1px solid black;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-email-text {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* FAQ Responsive Desktop Sizes */
+@media screen and (min-width: 768px) {
+
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  nav img {
+    width: 150px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1.25rem;  
+  }
+  .hero-form {
+    flex-direction: row;
+  }
+  .btn-get-started {
+    width: auto;
+    white-space: nowrap;
+  }
+  /* Default flex direction for sections */
+  .first {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+  /* Swaps ordering for .second: Image goes LEFT, Text goes RIGHT */
+  .second {
+    flex-direction: row-reverse;
+  }
+  .first-text {
+    flex: 1;
+  }
+  .secImg {
+    flex: 1;
+  }
+  .first-text h2 {
+    font-size: 3rem;
+  }
+  .first-text p {
+    font-size: 1.5rem;
+  }
+    .faq h2 {
+    font-size: 3rem;
+  }
+  .faq-question {
+    font-size: 1.5rem;
+    padding: 24px;
+  }
+  .faq-answer {
+    font-size: 1.4rem;
+  }
+}
